@@ -23,13 +23,13 @@ cmd.usage.updategroup: "&fUsage: &c/cg updategroup <player>"
 
 # Update notifications (shown to OP players on join)
 update.available: "&fNew version available. &8(&c%version%&8)"
-update.download: "&fDownload: &chttps://modrinth.com/plugin/easy-command-blocker"
+update.download: "&fDownload: &chttps://modrinth.com/plugin/commandguard"
 
 # Console / startup messages
 console.enabled: "&eEnabled! &fVersion: &c%version%"
 console.disabled: "&eDisabled! &fVersion: &c%version%"
 console.update_available: "&fNew version: &c%version%"
-console.update_download: "&fDownload: &chttps://modrinth.com/plugin/easy-command-blocker"
+console.update_download: "&fDownload: &chttps://modrinth.com/plugin/commandguard"
 console.update_error: "&cError while checking for updates."
 
 # Misc
