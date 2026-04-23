@@ -1,0 +1,34 @@
+# Language file to use. Files are located in the lang/ folder.
+# Bundled languages: en_EN, ru_RU
+lang: en_EN
+
+tab:
+  default:
+    priority: 0
+    commands: []
+blocked_command_default_actions:
+  - "message: &8[&b&lCG&8] &cYou don't have permissions to use that command."
+  - "playsound: BLOCK_NOTE_BLOCK_PLING;10;0.1"
+  - "title: 20;40;20;&cWhat are you doing?;&7Don't use that command!"
+use_commands_as_whitelist: false
+
+# Set to true if ECB is also installed on the backend (Spigot/Paper) servers.
+# When enabled, the proxy will push the allowed tab-complete list to each backend
+# server via plugin messaging so that backend-side filtering stays in sync.
+is_network: false
+
+# Delay in milliseconds before sending the tab-complete list to the backend
+# after a player connects. Increase if players connect to slow backend servers.
+tab_sync_delay: 500
+
+commands:
+  - "/velocity"
+  - "/server"
+  - "/lpv"
+block_colon_commands: false
+custom_commands_actions:
+  example1:
+    commands:
+      - "/velocity"
+    actions:
+      - "message: &8[&b&lCG&8] &cYou can't see the Velocity version!"

@@ -1,0 +1,102 @@
+# Language file to use. Files are located in the lang/ folder.
+# Bundled languages: en_EN, ru_RU
+lang: en_EN
+
+# Here you can create different groups to show only certain commands
+# in tab completion. You must give the CommandGuard.tab.<group>
+# permission to players for using this option.
+# The default group will apply to ALL users that don't have a group permission set.
+# Don't remove the default group.
+tab:
+  # Name of the group.
+  default:
+    # The priority works to define which group a player must use first if they
+    # have more than one group permission. A higher priority means the
+    # group will be selected first.
+    priority: 0
+
+    # A list of commands to show on tab completion. The command must
+    # include the "/".
+    commands: []
+  vip:
+    priority: 1
+
+    # You can add the "extends" option to inherit commands from another
+    # group. Doing so allows you to not repeat commands.
+    extends: default
+
+    commands:
+      - "/home"
+
+  # Example of a per-server group (proxy-side only).
+  # This group only applies when the player is on the "survival" server.
+  # admin:
+  #   priority: 2
+  #   servers:
+  #     - survival
+  #   commands:
+  #     - "/gamemode"
+
+# Actions to be executed when a user tries to use a blocked command.
+blocked_command_default_actions:
+  - "message: &8[&b&lCG&8] &cYou don't have permissions to use that command."
+  - "playsound: BLOCK_NOTE_BLOCK_PLING;10;0.1"
+  - "title: 20;40;20;&cWhat are you doing?;&7Don't use that command!"
+
+# Whether the plugin should send notifications on join to OP
+# players if an update is found
+update_notify: true
+
+# Option only in backend server.
+# Set it to true if you are using ECB in both the proxy and the backend.
+# When enabled, the proxy will push its allowed proxy-commands to this backend
+# so they appear in tab-complete alongside the backend's own allowed commands.
+# Each layer manages its own commands independently — proxy handles proxy plugins,
+# backend handles backend plugins.
+is_network: false
+
+# Option only in backend server.
+# Set it to true if you are using a 1.12- server or want to add compatibility
+# with 1.12- versions.
+# Requires ProtocolLib.
+# For this option to apply you must restart your server.
+legacy_support: false
+
+# If you set this option to true, the list below will serve as a whitelist instead,
+# meaning the listed commands will be allowed and all others will be blocked.
+use_commands_as_whitelist: false
+
+# List of commands to block.
+commands:
+  - "/?"
+  - "/bukkit:?"
+  - "/bukkit:ver"
+  - "/bukkit:version"
+  - "/bukkit:pl"
+  - "/bukkit:plugins"
+  - "/bukkit:help"
+  - "/bukkit:about"
+  - "/ver"
+  - "/version"
+  - "/plugins"
+  - "/pl"
+  - "/minecraft:me"
+  - "/about"
+  - "/icanhasbukkit"
+
+# Block all commands that contain ":".
+block_colon_commands: false
+
+# Here you can define group of commands that will execute certain actions.
+# The example1 section defines that commands like /ver or /version will kick
+# the player from the server, instead of using the default actions. You MUST use
+# the same commands defined in the previous list.
+# If you don't want custom command actions, you can delete this whole section.
+custom_commands_actions:
+  example1:
+    commands:
+      - "/ver"
+      - "/version"
+      - "/about"
+    actions:
+      - "console_command: kick %player% You can't see the version of the server!"

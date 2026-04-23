@@ -1,0 +1,11 @@
+main: com.wairesdindustries.commandguard.spigot.CommandGuard
+version: ${version}
+name: CommandGuard
+api-version: 1.13
+softdepend: [ViaVersion,ProtocolLib]
+author: 1wairesd
+
+commands:
+  commandguard:
+    description: Main command of CommandGuard
+    aliases: [cg]

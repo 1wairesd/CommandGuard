@@ -1,0 +1,37 @@
+# CommandGuard language file — Russian
+
+
+# Plugin prefix (used in all messages)
+prefix: "&8[&cCommand&fGuard&8]"
+
+# Команды
+cmd.no_permission: "&cУ вас нет прав для использования этой команды."
+cmd.help.header: "&fКоманды:"
+cmd.help.reload: " &c/cg reload &7— &fперезагрузить конфиг и обновить tab для всех игроков"
+cmd.help.check: " &c/cg check <игрок> &7— &fпоказать активную группу игрока"
+cmd.help.updategroup: " &c/cg updategroup <игрок> &7— &fобновить список команд для игрока"
+cmd.reload.success: "&aКонфиг перезагружен!"
+cmd.reload.tabsync_sent: "&aTabSync отправлен &f%count% &aигрокам онлайн."
+cmd.check.not_found: "&cИгрок &f%player% &cне найден."
+cmd.check.player: "&fИгрок: &c%player%"
+cmd.check.server: "&fСервер: &c%server%"
+cmd.check.groups: "&fАктивная группа: &c%groups%"
+cmd.check.commands: "&fРазрешённые команды &8(&c%count%&8): &f%commands%"
+cmd.updategroup.not_found: "&fИгрок &c%player% &fне найден."
+cmd.updategroup.success: "&fСписок команд обновлён для &c%player%."
+cmd.usage.check: "&fИспользование: &c/cg check <игрок>"
+cmd.usage.updategroup: "&fИспользование: &c/cg updategroup <игрок>"
+
+# Уведомления об обновлении (показываются OP-игрокам при входе)
+update.available: "&fДоступна новая версия. &8(&c%version%&8)"
+update.download: "&fСкачать: &chttps://modrinth.com/plugin/commandguard"
+
+# Консоль / запуск
+console.enabled: "&eВключён! &fВерсия: &c%version%"
+console.disabled: "&eВыключен! &fВерсия: &c%version%"
+console.update_available: "&fНовая версия: &c%version%"
+console.update_download: "&fСкачать: &chttps://modrinth.com/plugin/commandguard"
+console.update_error: "&cОшибка при проверке обновлений."
+
+# Прочее
+misc.invalid_sound: "&fЗвук &c%sound% &fнедействителен. Измените его в конфиге!"

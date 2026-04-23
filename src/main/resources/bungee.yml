@@ -1,0 +1,4 @@
+main: com.wairesdindustries.commandguard.waterfall.CommandGuard
+version: ${version}
+name: CommandGuard
+author: 1wairesd
