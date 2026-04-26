@@ -19,7 +19,7 @@ public class UpdateCheckerManager {
         try {
             // Modrinth API: замени YOUR_PROJECT_ID на ID твоего проекта
             HttpURLConnection con = (HttpURLConnection) new URL(
-                    "https://api.modrinth.com/v2/project/YOUR_PROJECT_ID/version").openConnection();
+                    "https://api.modrinth.com/v2/project/commandguard/version").openConnection();
             int timed_out = 1250;
             con.setConnectTimeout(timed_out);
             con.setReadTimeout(timed_out);
