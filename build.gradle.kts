@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "com.wairesdindustries.commandguard"
-version = "2025.04.1"
+version = "2025.04.2"
 
 java {
     toolchain.languageVersion.set(JavaLanguageVersion.of(21))
